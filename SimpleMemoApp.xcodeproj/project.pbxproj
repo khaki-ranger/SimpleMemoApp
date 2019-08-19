@@ -12,6 +12,7 @@
 		D1EE59E0230ACCEF009F4EC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1EE59DE230ACCEF009F4EC1 /* Main.storyboard */; };
 		D1EE59E2230ACCF1009F4EC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EE59E1230ACCF1009F4EC1 /* Assets.xcassets */; };
 		D1EE59E5230ACCF1009F4EC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1EE59E3230ACCF1009F4EC1 /* LaunchScreen.storyboard */; };
+		D1EE59ED230ACE04009F4EC1 /* MemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE59EC230ACE04009F4EC1 /* MemoTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D1EE59E1230ACCF1009F4EC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1EE59E4230ACCF1009F4EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1EE59E6230ACCF1009F4EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1EE59EC230ACE04009F4EC1 /* MemoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				D1EE59DA230ACCEF009F4EC1 /* AppDelegate.swift */,
 				D1EE59DC230ACCEF009F4EC1 /* ViewController.swift */,
+				D1EE59EC230ACE04009F4EC1 /* MemoTableViewController.swift */,
 				D1EE59DE230ACCEF009F4EC1 /* Main.storyboard */,
 				D1EE59E1230ACCF1009F4EC1 /* Assets.xcassets */,
 				D1EE59E3230ACCF1009F4EC1 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				D1EE59DD230ACCEF009F4EC1 /* ViewController.swift in Sources */,
 				D1EE59DB230ACCEF009F4EC1 /* AppDelegate.swift in Sources */,
+				D1EE59ED230ACE04009F4EC1 /* MemoTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
