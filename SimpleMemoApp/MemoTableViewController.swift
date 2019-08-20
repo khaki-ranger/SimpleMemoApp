@@ -11,6 +11,14 @@ import UIKit
 class MemoTableViewController: UITableViewController {
     
     var memos = ["red", "blue", "yellow"]
+    
+    @IBAction func unwindToMemoList(sender: UIStoryboardSegue) {
+        guard let sourceVC = sender.source as? MemoViewController, let memo = sourceVC.memo else {
+            return
+        }
+        self.memos.append(memo)
+        self.tableView.reloadData()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
