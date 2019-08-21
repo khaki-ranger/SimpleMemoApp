@@ -16,7 +16,11 @@ class MemoTableViewController: UITableViewController {
         guard let sourceVC = sender.source as? MemoViewController, let memo = sourceVC.memo else {
             return
         }
-        self.memos.append(memo)
+        if let selectedIndexPath = self.tableView.indexPathForSelectedRow {
+            self.memos[selectedIndexPath.row] = memo
+        } else {
+            self.memos.append(memo)
+        }
         self.tableView.reloadData()
     }
 
@@ -88,14 +92,19 @@ class MemoTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        guard let identifier = segue.identifier else {
+            return
+        }
+        if identifier == "editMemo" {
+            let memoVC = segue.destination as! MemoViewController
+            memoVC.memo = self.memos[(self.tableView.indexPathForSelectedRow?.row)!]
+        }
     }
-    */
 
 }
