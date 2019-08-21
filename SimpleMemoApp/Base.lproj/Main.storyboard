@@ -52,7 +52,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cP3-zM-hoA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="329" y="134"/>
+            <point key="canvasLocation" x="295" y="134"/>
         </scene>
         <!--New Memo-->
         <scene sceneID="tne-QT-ifu">
@@ -67,6 +67,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="memoTextFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Hck-22-dFx"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -79,7 +82,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Memo" id="Dg1-jJ-8ck">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="bDf-kN-nUE"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="bDf-kN-nUE">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="My9-ez-qZC"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="vpH-i4-tIF">
                             <connections>
                                 <segue destination="38a-Qo-Vma" kind="unwind" unwindAction="unwindToMemoListWithSender:" id="F3H-5v-5mQ"/>
